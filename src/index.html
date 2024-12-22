@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  <!--#region HEAD-->
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -7,6 +8,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Creative Bakery</title>
+    <link
+      rel="icon"
+      href="./images/icons/Icon-cookie.svg"
+      sizes="32x32"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
@@ -16,16 +22,28 @@
       href="./styles/main.scss"
     />
   </head>
+  <!--#endregion-->
   <body>
-    <!--#region HEADER-->
+    <!--#region HEADER/MENU-->
     <header class="header">
       <a
         href="#"
-        class="header__logo"
+        class="header__logo icon"
       >
         <img
-          src="./images/icons/logo.svg"
+          src="images/logo.svg"
           alt="logo"
+        />
+      </a>
+      <!-- the menu-button appears when the screen size is 768px -->
+      <a
+        class="menu-button icon"
+        href="#menu"
+      >
+        <img
+          class="menu-button__icon"
+          src="./images/icons/Icon-menu.svg"
+          alt="Menu button"
         />
       </a>
       <nav class="header__nav">
@@ -56,9 +74,9 @@
           </li>
           <li class="header__nav-list-item">
             <img
+              class="header__nav-list-item-image icon"
               src="images/icons/Icon-phone.svg"
               alt="phone"
-              class="header__nav-list-item-image"
             />
             <a
               class="header__nav-list-link"
@@ -70,7 +88,76 @@
         </ul>
       </nav>
     </header>
+    <!-- ASIDE -->
+    <aside
+      class="menu"
+      id="menu"
+    >
+      <div class="menu__top-bar">
+        <a
+          class="menu__logo icon"
+          href="#"
+        >
+          <img
+            src="images/logo.svg"
+            alt="logo"
+          />
+        </a>
+        <a
+          class="menu__close icon"
+          href="#"
+        >
+          <img
+            class="menu__close-icon"
+            src="./images/icons/Icon-close.svg"
+            alt="close button"
+          />
+        </a>
+      </div>
+      <nav class="menu__nav">
+        <ul class="menu__nav-list">
+          <li class="menu__nav-list-item">
+            <a
+              class="menu__nav-list-link"
+              href="#"
+            >
+              Products
+            </a>
+          </li>
+          <li class="menu__nav-list-item">
+            <a
+              class="menu__nav-list-link"
+              href="#"
+            >
+              About Us
+            </a>
+          </li>
+          <li class="menu__nav-list-item">
+            <a
+              class="menu__nav-list-link"
+              href="#"
+            >
+              Blog
+            </a>
+          </li>
+          <li class="menu__nav-list-item">
+            <img
+              class="menu__nav-list-item-image icon"
+              src="images/icons/Icon-phone.svg"
+              alt="phone"
+            />
+            <a
+              class="menu__nav-list-link"
+              href="#"
+            >
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <!--#endregion-->
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

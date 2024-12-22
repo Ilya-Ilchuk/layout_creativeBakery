@@ -2,8 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
   height: 88px;
+  position: relative;
+  z-index: 1;
+
+  @include top-bar-padding-inline;
+
+  &__nav {
+    @include tablet {
+      display: none;
+    }
+  }
 
   &__nav-list {
     display: flex;
