@@ -4,10 +4,16 @@
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/icons';
+@import 'blocks/main';
+@import 'blocks/introduction';
+@import 'blocks/button';
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
   background: $c-light-blue;
   color: $c-black;
+
+  margin-inline: auto;
+  max-width: 1440px;
 }

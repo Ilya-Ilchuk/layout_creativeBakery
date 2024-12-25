@@ -10,7 +10,7 @@
     <title>Creative Bakery</title>
     <link
       rel="icon"
-      href="./images/icons/Icon-cookie.svg"
+      href="images/icons/favicon.ico"
       sizes="32x32"
     />
     <link
@@ -19,7 +19,7 @@
     />
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="styles/index.scss"
     />
   </head>
   <!--#endregion-->
@@ -48,39 +48,34 @@
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-list-item">
+          <li class="header__nav-item">
             <a
-              class="header__nav-list-link"
+              class="header__nav-link"
               href="#"
             >
               Products
             </a>
           </li>
-          <li class="header__nav-list-item">
+          <li class="header__nav-item">
             <a
-              class="header__nav-list-link"
+              class="header__nav-link"
               href="#"
             >
               About Us
             </a>
           </li>
-          <li class="header__nav-list-item">
+          <li class="header__nav-item">
             <a
-              class="header__nav-list-link"
+              class="header__nav-link"
               href="#"
             >
               Blog
             </a>
           </li>
-          <li class="header__nav-list-item">
-            <img
-              class="header__nav-list-item-image icon"
-              src="images/icons/Icon-phone.svg"
-              alt="phone"
-            />
+          <li class="header__nav-item">
             <a
-              class="header__nav-list-link"
-              href="#"
+              class="header__nav-link"
+              href="tel:+1-629-555-0129"
             >
               Contact us
             </a>
@@ -88,7 +83,7 @@
         </ul>
       </nav>
     </header>
-    <!-- ASIDE -->
+    <!-- MENU -->
     <aside
       class="menu"
       id="menu"
@@ -116,39 +111,34 @@
       </div>
       <nav class="menu__nav">
         <ul class="menu__nav-list">
-          <li class="menu__nav-list-item">
+          <li class="header__nav-item">
             <a
-              class="menu__nav-list-link"
+              class="header__nav-link"
               href="#"
             >
               Products
             </a>
           </li>
-          <li class="menu__nav-list-item">
+          <li class="header__nav-item">
             <a
-              class="menu__nav-list-link"
+              class="header__nav-link"
               href="#"
             >
               About Us
             </a>
           </li>
-          <li class="menu__nav-list-item">
+          <li class="header__nav-item">
             <a
-              class="menu__nav-list-link"
+              class="header__nav-link"
               href="#"
             >
               Blog
             </a>
           </li>
-          <li class="menu__nav-list-item">
-            <img
-              class="menu__nav-list-item-image icon"
-              src="images/icons/Icon-phone.svg"
-              alt="phone"
-            />
+          <li class="header__nav-item">
             <a
-              class="menu__nav-list-link"
-              href="#"
+              class="header__nav-link"
+              href="tel:+1-629-555-0129"
             >
               Contact us
             </a>
@@ -157,7 +147,26 @@
       </nav>
     </aside>
     <!--#endregion-->
-
+    <!--#region MAIN/SECTIONS-->
+    <main class="main">
+      <section class="introduction">
+        <p class="introduction__description">
+          We bake your fantasies — croissants, cakes, cookies, and cupcakes.
+        </p>
+        <div class="introduction__image"></div>
+        <div class="introduction__button-wrapper">
+          <a
+            class="introduction__button"
+            href="#"
+          >
+            <button class="button">
+              <span class="introduction__button-title">Learn more</span>
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!--#endregion-->
     <script src="scripts/main.js"></script>
   </body>
 </html>

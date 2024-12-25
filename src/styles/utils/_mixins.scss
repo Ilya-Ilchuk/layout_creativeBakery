@@ -5,46 +5,71 @@
   }
 }
 
-// #region media sizes
+// media sizes
 @mixin mobile {
-  @media (max-width: $s-mobile) {
+  @media (min-width: $s-mobile) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (max-width: $s-tablet) {
+  @media (min-width: $s-tablet) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (max-width: $s-desktop) {
+  @media (min-width: $s-desktop) {
     @content;
   }
 }
 
 @mixin desktop-plus {
-  @media (max-width: $s-desktop-plus) {
+  @media (min-width: $s-desktop-plus) {
     @content;
   }
 }
 
-// #endregion
-
-// #region content
+// content
 @mixin top-bar-padding-inline {
-  padding-inline: 32px;
+  padding-inline: 16px;
 
   @include tablet {
-    padding: 0 16px;
+    padding-inline: 32px;
   }
 }
 
-// #endregion
+@mixin content-padding-inline {
+  padding-inline: 16px;
 
-// #region flex
-// #endregion
+  @include tablet {
+    padding-inline: 44px;
+  }
 
-// #region grid
-// #endregion
+  @include desktop-plus {
+    padding-inline: 124px;
+  }
+}
+
+// flex
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// grid
+@mixin page-grid {
+  --columns: 2;
+
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include tablet {
+    --columns: 8;
+
+    column-gap: 24px;
+  }
+}
