@@ -1,3 +1,6 @@
 .main {
   @include content-padding-inline;
+
+  margin-inline: auto;
+  max-width: 1440px;
 }

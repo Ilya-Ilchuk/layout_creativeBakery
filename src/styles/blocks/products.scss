@@ -61,6 +61,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+    transition: filter $effect-duration $effect-function;
   }
 
   &__link {
@@ -84,6 +85,7 @@
       color: $c-accent-orange;
       font-size: 2em;
       opacity: 0;
+      transition: opacity $effect-duration $effect-function;
     }
 
     &:hover {

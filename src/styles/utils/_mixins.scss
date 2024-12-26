@@ -74,7 +74,13 @@
 }
 
 // underline
-@mixin hover-underline($color, $height: 2px, $transition: 0.3s) {
+@mixin hover-underline(
+  $color: $c-accent-orange,
+  $height: 2px,
+  $transition: 0.3s
+) {
+  transition: color $effect-duration $effect-function;
+
   &::after {
     content: '';
     position: absolute;
@@ -86,6 +92,11 @@
     border-radius: 1px;
     background-color: $color;
     transition: width $transition ease;
+  }
+
+  &:hover {
+    transition: color $effect-duration $effect-function;
+    color: $color;
   }
 
   &:hover::after {
