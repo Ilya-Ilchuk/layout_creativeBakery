@@ -1,5 +1,6 @@
 .introduction {
   @include page-grid;
+
   gap: 0;
   text-align: center;
 
@@ -106,7 +107,7 @@
       padding-left: 28px;
       line-height: 24px;
 
-      &:before {
+      &::before {
         content: '';
         position: absolute;
         width: 24px;

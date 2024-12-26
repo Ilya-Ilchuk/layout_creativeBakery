@@ -52,7 +52,6 @@
 }
 
 // flex
-
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -71,5 +70,25 @@
     --columns: 8;
 
     column-gap: 24px;
+  }
+}
+
+// underline
+@mixin hover-underline($color, $height: 2px, $transition: 0.3s) {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: $height;
+    border-radius: 1px;
+    background-color: $color;
+    transition: width $transition ease;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }

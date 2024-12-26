@@ -16,7 +16,7 @@
       transition: color $effect-duration $effect-function;
       color: $c-white;
 
-      &:before {
+      &::before {
         content: '';
         position: absolute;
         width: 24px;

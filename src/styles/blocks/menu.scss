@@ -48,6 +48,7 @@
 
     &-list {
       @include flex-center;
+
       flex-direction: column;
       gap: 24px;
 
