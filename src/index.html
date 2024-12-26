@@ -21,11 +21,19 @@
       rel="stylesheet"
       href="styles/index.scss"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <!--#endregion-->
   <body>
     <!--#region HEADER/MENU-->
-    <header class="header">
+    <header
+      class="header"
+      data-aos="fade-down"
+    >
       <a
         href="#"
         class="header__logo icon"
@@ -150,11 +158,20 @@
     <!--#region MAIN/SECTIONS-->
     <main class="main">
       <section class="introduction">
-        <p class="introduction__description">
+        <p
+          class="introduction__description"
+          data-aos="fade-down-right"
+        >
           We bake your fantasies — croissants, cakes, cookies, and cupcakes.
         </p>
-        <div class="introduction__image"></div>
-        <div class="introduction__button-wrapper">
+        <div
+          class="introduction__image"
+          data-aos="fade-left"
+        ></div>
+        <div
+          class="introduction__button-wrapper"
+          data-aos="fade-up-right"
+        >
           <a
             class="introduction__button"
             href="#about-us"
@@ -176,7 +193,10 @@
           </p>
         </div>
 
-        <article class="products__product">
+        <article
+          class="products__product"
+          data-aos="fade-right"
+        >
           <a
             href="#"
             class="products__link"
@@ -198,7 +218,10 @@
             Order
           </a>
         </article>
-        <article class="products__product">
+        <article
+          class="products__product"
+          data-aos="fade-right"
+        >
           <a
             href="#"
             class="products__link"
@@ -220,7 +243,10 @@
             Order
           </a>
         </article>
-        <article class="products__product">
+        <article
+          class="products__product"
+          data-aos="fade-left"
+        >
           <a
             href="#"
             class="products__link"
@@ -243,7 +269,10 @@
             Order
           </a>
         </article>
-        <article class="products__product">
+        <article
+          class="products__product"
+          data-aos="fade-left"
+        >
           <a
             href="#"
             class="products__link"
@@ -265,7 +294,10 @@
             Order
           </a>
         </article>
-        <article class="products__product">
+        <article
+          class="products__product"
+          data-aos="fade-right"
+        >
           <a
             href="#"
             class="products__link"
@@ -287,7 +319,10 @@
             Order
           </a>
         </article>
-        <article class="products__product">
+        <article
+          class="products__product"
+          data-aos="fade-right"
+        >
           <a
             href="#"
             class="products__link"
@@ -313,9 +348,18 @@
       <section
         class="about-us"
         id="about-us"
+        data-aos="zoom-out-down"
       >
-        <h2 class="about-us__title">Few words About us</h2>
-        <p class="about-us__description">
+        <h2
+          class="about-us__title"
+          data-aos="zoom-out-up"
+        >
+          Few words About us
+        </h2>
+        <p
+          class="about-us__description"
+          data-aos="zoom-out-down"
+        >
           Like many design teams, Onfido made the transition from Abstract +
           Sketch, to Figma in the last couple of years. One of the common
           resistance points internally before making that switch, was Figma’s
@@ -326,18 +370,32 @@
 
         <div class="about-us__statistics">
           <div class="about-us__wrapper">
-            <h3 class="about-us__value">2015</h3>
+            <h3
+              class="about-us__value"
+              data-aos="zoom-in-right"
+            >
+              2015
+            </h3>
             <p class="about-us__text">Foundation year</p>
           </div>
-          <div class="about-us__wrapper">
+          <div
+            class="about-us__wrapper"
+            data-aos="zoom-in"
+          >
             <h3 class="about-us__value">23</h3>
             <p class="about-us__text">Stores</p>
           </div>
-          <div class="about-us__wrapper">
+          <div
+            class="about-us__wrapper"
+            data-aos="zoom-in"
+          >
             <h3 class="about-us__value">155</h3>
             <p class="about-us__text">Companies</p>
           </div>
-          <div class="about-us__wrapper">
+          <div
+            class="about-us__wrapper"
+            data-aos="zoom-in-left"
+          >
             <h3 class="about-us__value">10k+</h3>
             <p class="about-us__text">Clients</p>
           </div>
@@ -352,13 +410,17 @@
           <a
             href="#"
             class="footer__logo icon"
+            data-aos="fade-down"
           >
             <img
               src="images/contact-logo.svg"
               alt="logo"
             />
           </a>
-          <div class="footer__menu">
+          <div
+            class="footer__menu"
+            data-aos="fade-up"
+          >
             <span class="footer__menu-title">Menu</span>
             <nav class="footer__nav">
               <ul class="footer__nav-list">
@@ -402,8 +464,16 @@
           class="footer__contacts-wrapper"
           id="contacts"
         >
-          <h2 class="footer__title">Contact us</h2>
-          <div class="footer__contacts">
+          <h2
+            class="footer__title"
+            data-aos="fade-down"
+          >
+            Contact us
+          </h2>
+          <div
+            class="footer__contacts"
+            data-aos="fade-up"
+          >
             <span class="footer__contacts-title">Call us</span>
             <nav class="footer__nav">
               <ul class="footer__nav-list">
@@ -434,7 +504,10 @@
               </ul>
             </nav>
           </div>
-          <div class="footer__address">
+          <div
+            class="footer__address"
+            data-aos="fade-up"
+          >
             <span class="footer__contacts-title">Email us</span>
             <a
               class="footer__email"
